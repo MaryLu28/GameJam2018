@@ -3,9 +3,9 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour {
 
-	public float x_speed = 6f;
-	public float z_speed = 6f;
-	public float relative_y_speed = 3f;
+	public float x_speed = 5f;
+	public float z_speed = 5f;
+	public float relative_y_speed = 1.5f;
 
 	public float current_position;
 	Vector3 movement;                   // The vector to store the direction of the player's movement.
@@ -40,6 +40,12 @@ public class PlayerController : MonoBehaviour {
 		depth_movement.Set (0, moveDepth * relative_y_speed  * Time.fixedDeltaTime, moveDepth * z_speed * Time.fixedDeltaTime);
 
 		rb.MovePosition (transform.position + depth_movement + movement);
+
+//		float scale = Mathf.Pow (transform.position.z, -relativate_scale);
+//			
+//		Vector3 scaleVector = new Vector3 (scale, scale, 0);
+//		transform.localScale = scaleVector;
+
 	}
 
 }
