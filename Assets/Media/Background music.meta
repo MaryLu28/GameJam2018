@@ -1,7 +1,13 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Assets/Media/Background music.meta
 guid: 6ae654e9309597244870697f4b30fa3f
 folderAsset: yes
 timeCreated: 1517083775
+=======
+guid: 7c27c65ed586d1748a795d19d722c625
+folderAsset: yes
+timeCreated: 1517078483
+>>>>>>> develop:Assets/Sprites.meta
 licenseType: Free
 DefaultImporter:
   externalObjects: {}

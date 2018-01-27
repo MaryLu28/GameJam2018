@@ -1,7 +1,13 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Assets/Media/effects.meta
 guid: d1511142fbd797f4ab1000ae927b5f3a
 folderAsset: yes
 timeCreated: 1517083775
+=======
+guid: 2f64f33b9ad6f8b488202319409f11e5
+folderAsset: yes
+timeCreated: 1517079474
+>>>>>>> develop:Assets/Scenes.meta
 licenseType: Free
 DefaultImporter:
   externalObjects: {}
