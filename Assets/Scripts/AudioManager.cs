@@ -30,6 +30,17 @@ public class AudioManager : MonoBehaviour {
 			}
 		}
 	}
+	public void Stop(string clipName)
+	{
+		for (int i = 0; i < sound.Length; i++)
+		{
+			if (sound[i].name == clipName)
+			{
+				sound[i].Stop();
+				return;
+			}
+		}
+	}
 
 	void Start()
 	{
