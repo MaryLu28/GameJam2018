@@ -20,9 +20,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4310057193044974}
   - component: {fileID: 212549050285814704}
+  - component: {fileID: 114728659604274070}
   - component: {fileID: 54545454347357582}
   - component: {fileID: 65267055932068504}
-  - component: {fileID: 114725536238538278}
   m_Layer: 0
   m_Name: main_character
   m_TagString: Untagged
@@ -37,8 +37,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1314781357816044}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 2.59, y: 3.06, z: -0.45}
+  m_LocalScale: {x: 0.15146387, y: 0.15146384, z: 0.15146384}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -68,9 +68,9 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 5.0000005, y: 6.930001, z: 3}
+  m_Size: {x: 5.0000005, y: 6.930001, z: 0.9}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &114725536238538278
+--- !u!114 &114728659604274070
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -83,9 +83,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   x_speed: 5
   z_speed: 5
-  relative_y_speed: 1.5
+  relative_y_speed: 0
   current_position: 0
-  rb: {fileID: 0}
+  rb: {fileID: 54545454347357582}
   depth_position: 0
   max_depth: 5
   min_depth: -5
@@ -120,16 +120,16 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
+  m_SortingLayerID: -409504957
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 69893b73d5ac62a44a300e8a41a5618d, type: 3}
-  m_Color: {r: 0.9485294, g: 0.2859537, b: 0.2859537, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 608e5c0b91e6b2b42bca02d98032a5e3, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 5, y: 6.93}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
