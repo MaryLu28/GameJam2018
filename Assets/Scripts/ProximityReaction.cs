@@ -1,0 +1,22 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class ProximityReaction : MonoBehaviour {
+
+  // Use this for initialization
+  void Start () {
+    
+  }
+  
+  // Update is called once per frame
+  void Update () {
+    
+  }
+
+  void OnTriggerEnter(Collider other)
+  {
+      Debug.Log("Estoy Cerca!!");
+      GetComponent<AudioSource>().Play();
+  }
+}
