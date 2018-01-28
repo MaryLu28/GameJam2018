@@ -1366,7 +1366,7 @@ GameObject:
   - component: {fileID: 1439474458}
   - component: {fileID: 1439474457}
   m_Layer: 5
-  m_Name: Bench (1)
+  m_Name: Tesla
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
