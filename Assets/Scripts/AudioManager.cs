@@ -4,10 +4,7 @@ using UnityEngine;
 
 public class AudioManager : MonoBehaviour {
 
-	public Sound[] backgroundmusic;
-	public AudioSource effects;
-	public AudioSource voice;
-
+	public Sound[] sound;
 	public static AudioManager instance; 
 
 	// Use this for initialization
@@ -19,40 +16,28 @@ public class AudioManager : MonoBehaviour {
 			Destroy(gameObject);
 			return;
 		}
-
 		DontDestroyOnLoad(gameObject);
-
-		foreach (Sound s in backgroundmusic)
+	}
+	public void Play (string clipName)
+	{
+		for(int i = 0; i < sound.Length; i++)
 		{
-			s.source = gameObject.AddComponent<AudioSource>();
-			s.source.clip = s.clip;
-
-			s.source.volume = s.volume;
-			s.source.pitch = s.pitch;
-			s.source.loop = s.loop;
-		}		
+			if(sound[i].name== clipName)
+			{
+				sound[i].Play();
+				return;
+			}
+		}	
 	}
 	
-	void Start() //Inicia al comenzar. Probablemente necesite añadirlo a la escena de alguna forma
+	void Start()
 	{
-		PlayMusic("Menu");
-	}
-
-	public void PlayEffect(AudioClip clip)
-	{
-		effects.clip = clip;
-		effects.Play();
-	}
-
-	public void PlayMusic (string name)
-	{
-		Sound s = Array.Find(backgroundmusic, SoundManager => SoundManager.name == name);
-		if (s == null)	
+		for (int i = 0; i < sound.Length; i++)
 		{
-			Debug.LogWarning("Sound " + name + " is missing");
-			return;
-		}	
-		s.source.Play();
-			
-	}	
+			GameObject _go = new GameObject("Sound" + i + "_" + sound[i].name);
+			_go.transform.SetParent(this.transform);
+			sound[i].SetSource(_go.AddComponent<AudioSource>());
+		}
+		Play("Menu");
+	}
 }
