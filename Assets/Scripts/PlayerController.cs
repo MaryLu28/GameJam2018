@@ -18,11 +18,15 @@ public class PlayerController : MonoBehaviour {
 	public float max_depth = 5;
 	public float min_depth = -5;
 
+	private Animator anim;
+	public float scale;
+
 	// Use this for initialization
 	void Start () {
 		rb = GetComponent<Rigidbody>();
 		rb.velocity = Vector3.zero;
 		depth_position = 0;
+		anim = GetComponent<Animator>();
 
 	}
 
@@ -32,11 +36,25 @@ public class PlayerController : MonoBehaviour {
 
 		// Horizontal movement
 		float moveHorizontal = Input.GetAxis ("Horizontal");
+		if (Mathf.Abs(moveHorizontal) > 0) {
+			anim.SetFloat("Velocity", Mathf.Abs(moveHorizontal));
+		}
 
 		movement.Set(moveHorizontal * x_speed * Time.fixedDeltaTime,0,0);
 
+		if (moveHorizontal < -0.1f) {
+			GetComponent<SpriteRenderer>().flipX = false;
+		}
+		if (moveHorizontal > 0.1f) {
+			GetComponent<SpriteRenderer>().flipX = true;
+		}
+		
+
 		//Depth movement
 		float moveDepth = Input.GetAxis("Vertical");
+		if (Mathf.Abs(moveDepth) > 0) {
+			anim.SetFloat("Velocity", Mathf.Abs(moveDepth));
+		}
 
 		depth_movement.Set (0, moveDepth * relative_y_speed  * Time.fixedDeltaTime, moveDepth * z_speed * Time.fixedDeltaTime);
 
