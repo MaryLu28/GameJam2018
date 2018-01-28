@@ -17,6 +17,6 @@ public class ProximityReaction : MonoBehaviour {
   void OnTriggerEnter(Collider other)
   {
       Debug.Log("Estoy Cerca!!");
-      
+      GetComponent<AudioSource>().Play();
   }
 }
