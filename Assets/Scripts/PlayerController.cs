@@ -21,6 +21,7 @@ public class PlayerController : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		rb = GetComponent<Rigidbody>();
+		rb.velocity = Vector3.zero;
 		depth_position = 0;
 
 	}
@@ -47,6 +48,14 @@ public class PlayerController : MonoBehaviour {
 //		transform.localScale = scaleVector;
 
 	}
+
+//	void OnTriggerEnter(Collider other) {
+//		relative_y_speed = 0f;
+//	}
+//
+//	void OnTriggerExit(Collider other) {
+//		relative_y_speed = 1.5f;
+//	}
 
 }
 
