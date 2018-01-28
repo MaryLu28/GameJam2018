@@ -1,14 +1,15 @@
 ﻿using UnityEngine.Audio;
 using System;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class AudioManager : MonoBehaviour {
 
 	public Sound[] sound;
-	public static AudioManager instance; 
+	public static AudioManager instance;
 
 	// Use this for initialization
-	void Awake () {
+	void Awake() {
 		if (instance == null)
 			instance = this;
 		else
@@ -18,18 +19,18 @@ public class AudioManager : MonoBehaviour {
 		}
 		DontDestroyOnLoad(gameObject);
 	}
-	public void Play (string clipName)
+	public void Play(string clipName)
 	{
-		for(int i = 0; i < sound.Length; i++)
+		for (int i = 0; i < sound.Length; i++)
 		{
-			if(sound[i].name== clipName)
+			if (sound[i].name == clipName)
 			{
 				sound[i].Play();
 				return;
 			}
-		}	
+		}
 	}
-	
+
 	void Start()
 	{
 		for (int i = 0; i < sound.Length; i++)
@@ -40,4 +41,5 @@ public class AudioManager : MonoBehaviour {
 		}
 		Play("Menu");
 	}
+
 }
