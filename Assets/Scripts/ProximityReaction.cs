@@ -4,9 +4,13 @@ using UnityEngine;
 
 public class ProximityReaction : MonoBehaviour {
 
+  GameObject button;
+  Animator buttonAnim;
+
   // Use this for initialization
   void Start () {
-    
+    button = GameObject.Find("Button");
+    buttonAnim = button.GetComponent<Animator>();
   }
   
   // Update is called once per frame
@@ -16,7 +20,12 @@ public class ProximityReaction : MonoBehaviour {
 
   void OnTriggerEnter(Collider other)
   {
-      Debug.Log("Estoy Cerca!!");
       GetComponent<AudioSource>().Play();
+      buttonAnim.SetBool("isOn", true);
+  }
+
+  void OnTriggerExit(Collider other)
+  {
+      buttonAnim.SetBool("isOn", false);
   }
 }
