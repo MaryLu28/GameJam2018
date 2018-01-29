@@ -1945,7 +1945,7 @@ MonoBehaviour:
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
-  m_firstOverflowCharacterIndex: 133
+  m_firstOverflowCharacterIndex: 140
   m_linkedTextComponent: {fileID: 0}
   m_isLinkedTextComponent: 0
   m_enableKerning: 1
@@ -1967,10 +1967,10 @@ MonoBehaviour:
   m_margin: {x: -9.060104, y: -0.7690364, z: -9.244384, w: 4.669159}
   m_textInfo:
     textComponent: {fileID: 1113408297}
-    characterCount: 174
+    characterCount: 181
     spriteCount: 0
-    spaceCount: 28
-    wordCount: 24
+    spaceCount: 29
+    wordCount: 25
     linkCount: 0
     lineCount: 15
     pageCount: 1
@@ -4613,9 +4613,9 @@ MonoBehaviour:
     Head Developers
 
 
-    Maria Lourdes Garcia Flores
+    Maria Lourdes Garcia Florez
 
-    Famar Azuaje
+    Gamar Azuaje
 
 
     Visual and animations
