@@ -348,6 +348,7 @@ MonoBehaviour:
   angleRotation: 10
   currentAngle: 0
   successAngle: 50
+  nextLevel: SecondLevel
 --- !u!114 &114042580993452832
 MonoBehaviour:
   m_ObjectHideFlags: 1

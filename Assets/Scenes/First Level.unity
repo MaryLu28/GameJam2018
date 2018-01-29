@@ -2328,7 +2328,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1683924552071864, guid: fe3889d43cf61c5499145428e0fce85f, type: 2}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: fe3889d43cf61c5499145428e0fce85f, type: 2}
@@ -4804,7 +4804,7 @@ GameObject:
   m_PrefabParentObject: {fileID: 1941428493999634, guid: fe3889d43cf61c5499145428e0fce85f,
     type: 2}
   m_PrefabInternal: {fileID: 1017325041}
---- !u!95 &1794026677
+--- !u!95 &1794026681
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 0

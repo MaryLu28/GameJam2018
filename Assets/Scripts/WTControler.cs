@@ -7,6 +7,7 @@ public class WTControler : MonoBehaviour {
 	public float angleRotation = 10f;
 	public float currentAngle;
 	public float successAngle;
+	public string nextLevel;
 	
 
 	// Use this for initialization
@@ -20,7 +21,7 @@ public class WTControler : MonoBehaviour {
 		
 		if ( (currentAngle >= successAngle) && (currentAngle <= successAngle+10f)){
 			GetComponent<AudioSource>().Stop();
-			
+			Application.LoadLevel(nextLevel);
 		}
 		if (Input.GetButtonDown("Right")) {
 			transform.Rotate(0,0,angleRotation);
