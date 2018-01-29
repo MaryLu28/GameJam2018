@@ -20,6 +20,7 @@ public class WTControler : MonoBehaviour {
 		
 		if ( (currentAngle >= successAngle) && (currentAngle <= successAngle+10f)){
 			GetComponent<AudioSource>().Stop();
+			
 		}
 		if (Input.GetButtonDown("Right")) {
 			transform.Rotate(0,0,angleRotation);
