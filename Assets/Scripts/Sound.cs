@@ -6,15 +6,33 @@ public class Sound{
 
 	public string name;
 	public AudioClip clip;
+	public AudioMixerGroup mixerGroup;
 
-	[Range(0f,1f)]
+	[Range(-40f,10f)]
 	public float volume;
 	[Range(.95f,1.05f)]
 	public float pitch;
 
-	public bool loop;
-
+	public bool loop = false;
+	public bool playOnAwake = false;
+	public void SetSource(AudioSource mySource)
+	{
+		source = mySource;
+		source.clip = clip;
+		source.pitch = pitch;
+		source.volume = volume;
+		source.playOnAwake = playOnAwake;
+		source.loop = loop;
+		source.outputAudioMixerGroup = mixerGroup;
+	}
+	public void Play()
+	{
+		source.Play();
+	}
+	public void Stop()
+	{
+		source.Stop();
+	}
 	[HideInInspector]
 	public AudioSource source;
-
 }

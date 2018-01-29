@@ -1,0 +1,24 @@
+fileFormatVersion: 2
+guid: 0d9798aac225793458f6e2545b476753
+timeCreated: 1517100119
+licenseType: Free
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: FHA Modernized Ideal ClassicNC
+  fontNames:
+  - FHA Modernized Ideal ClassicNC
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: cb4f5d72d0b6d3b4fb8caeafd43c1572, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
