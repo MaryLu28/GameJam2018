@@ -23,7 +23,7 @@ public class Door : MonoBehaviour {
 		{
 			if (doorNumber == 1) {
 				Vector3 newPosition = otherObject.gameObject.transform.position;
-				newPosition = new Vector3 (-5.145413f, 5.0956f, 6.497959f);
+				newPosition = new Vector3 (-3.920964f, 5.0956f, 6.497959f);
 				otherObject.gameObject.transform.position = newPosition;
 				Debug.Log ("Teleport");
 			}
